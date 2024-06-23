@@ -14,7 +14,7 @@ class Outputs(BaseModel):
 class MyReverseString(Action[Inputs, Outputs]):
     name = "my_reverse_string"
 
-    async def run(inputs: Inputs) -> Outputs:
+    async def run(self, inputs: Inputs) -> Outputs:
         return Outputs(
             reversed_string=inputs.input_string[::-1]
         )

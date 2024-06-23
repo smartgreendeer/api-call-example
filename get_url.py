@@ -10,9 +10,10 @@ async def main():
     )
 
     # Run the flow and return the default output (result of the extract_title action)
-    result = await flow.set_vars(
-        my_input="hahahah hihihih", word_index=0
-    ).run()
+    result = await flow.run(
+        my_input="hahahah hihihih",
+        word_index=0
+    )
     print(result)
 
 

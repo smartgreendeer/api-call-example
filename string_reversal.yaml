@@ -9,4 +9,6 @@ flow:
     action: my_reverse_string
     input_string:
       var: my_input
+    word_index:
+      var: word_index
 default_output: reverse_string.reversed_string
