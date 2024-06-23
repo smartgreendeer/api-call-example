@@ -13,8 +13,8 @@ async def main():
     result = await flow.run(
         my_input="hahahah hihihih",
         word_index=0
-    )
-    print(result)
+    ).run()
+    print(result.default_output)
 
 
 if __name__ == "__main__":
