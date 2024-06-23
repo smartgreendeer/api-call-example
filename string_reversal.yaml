@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/asynchronous-flows/asyncflows/main/schemas/asyncflows_schema.json
+
+default_model: 
+  model: ollama/llama3
+  api_base: https://raphaelfrancis.com/ollama
+  auth_token:       smartgreendeer:a7c7d2d0277c459c5b4231a9775f71ca1690bdb190044683afb64b4c750fb1b120491601e8e33b22e39e7ab839c8607a0ab61e7e8ca79c7887ae54dc
+flow:
+  reverse_string:
+    action: my_reverse_string
+    input_string:
+      var: my_input
+default_output: reverse_string.reversed_string
